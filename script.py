@@ -11,8 +11,8 @@ from collections import namedtuple
 # --- SCRIPT CONFIGURATION ---
 
 # 1. Test Parameters (Global Variables)
-TOTAL_REQUESTS = 30000
-MAX_WORKERS = 300
+TOTAL_REQUESTS = 20000
+MAX_WORKERS = 200
 # 2. URL and Headers (as specified in the request)
 FULL_URL_TEMPLATE = "https://stbavheyxshbpnmbviys.supabase.co/rest/v1/looms?select={RANDOM_PARAMS}&title=ilike.{like_expression}&limit={random_limit_between_30_to_300}"
 
@@ -288,4 +288,5 @@ if __name__ == "__main__":
         logging.info("Execution State: END")
         
         # Analyze and print the final results
+
         analyze_results()
